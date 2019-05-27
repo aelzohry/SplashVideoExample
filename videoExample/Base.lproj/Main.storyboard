@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TSI-cJ-BOr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="MainViewController" customModule="videoExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCv-6A-dxM">
+                                <rect key="frame" x="188.5" y="442.5" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kCv-6A-dxM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0au-LY-BIG"/>
+                            <constraint firstItem="kCv-6A-dxM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ehf-Xc-mVY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="50"/>
+        </scene>
+        <!--Video Splash View Controller-->
+        <scene sceneID="TCm-kW-AmY">
+            <objects>
+                <viewController id="TSI-cJ-BOr" customClass="VideoSplashViewController" customModule="videoExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fVd-XW-DTN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBF-cW-Epx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VBF-cW-Epx" secondAttribute="bottom" id="4eo-GB-NNG"/>
+                            <constraint firstItem="VBF-cW-Epx" firstAttribute="leading" secondItem="Cvu-0f-Knu" secondAttribute="leading" id="7Py-fr-rRj"/>
+                            <constraint firstItem="VBF-cW-Epx" firstAttribute="top" secondItem="fVd-XW-DTN" secondAttribute="top" id="gyY-Pp-Gau"/>
+                            <constraint firstItem="Cvu-0f-Knu" firstAttribute="trailing" secondItem="VBF-cW-Epx" secondAttribute="trailing" id="sju-go-zD4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cvu-0f-Knu"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoContainerView" destination="VBF-cW-Epx" id="aND-rF-RvS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPc-gb-fbk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="855.80357142857144"/>
+        </scene>
+    </scenes>
+</document>
